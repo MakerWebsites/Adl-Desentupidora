@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/estilos.css">
-    <link rel="stylesheet" href="assets/body.css">
-    <link rel="stylesheet" href="assets/header.css">
-    <link rel="stylesheet" href="assets/servicos-main.css">
-    <link rel="stylesheet" href="assets/footer.css">
-    <title>ADL serviços</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Serviços Orçamento</title>
 </head>
-<body>
-    <header>
-        <img src="adllogo02.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
-  
-    <main>
-        <h1>Serviços</h1>
-        <ul>
-            <li>Alvenaria</li>
-            <li>Bombeiro Hidráulico</li>
-            <li>Caça vazamentos</li>
-            <li>Cavalete</li>
-            <li>Construção e limpeza de fossa séptica</li>
-            <li>Controle de pragas urbanas</li>
-            <li>Encanador</li>
-            <li>Hidráulica</li>
-            <li>Hidráulica reparos em esgoto em geral</li>
-            <li>Hidrojateamento</li>
-            <li>Impermeabilização</li>
-            <li>Infiltrações</li>
-            <li>Instalação de biodigestor</li>
-            <li>Instalação de caixa de inspeção de esgoto</li>
-            <li>Instalação de sistema de tratamento de esgoto</li>
-            <li>Instalação e limpeza de caixa d'água</li>
-            <li>Instalação e separação de relógio Sabesp</li>
-            <li>Pedreiro</li>
-            <li>Sistema de micro filmagem em encanamento de esgoto</li>
-            <li>Troca de tubulação antiga de manilha por PVC</li>
-        </ul>
-    </main>
-    <footer>
-        <span>Zona Sul de São Paulo Capital</span>
 
-        <h3><a href="mailto:grupoadlservicos@gmail.com">grupoadlservicos@gmail.com</a></h3>
+<body style="font-family: Arial, Helvetica, sans-serif; padding: 5%;">
+   
+    <h2 style="text-align: center;">formulário de orçamento</h2>
+    <p style="text-align: center; background-color: rgba(128, 128, 128, 0.168);margin: 10px; border-radius: 10px; padding: 5px;">Seus dados serão enviados para a nossa central de atendimento e logo retornaremos a sua mensagem.</p>
+    <a style="text-decoration: none;" href="tel:+5511968559541">Prefere falar por ligação? Ligue aqui.</a>
 
-        <p>CNPJ 32.763.700/0001-24</p>
+    <form style="border-radius: 10px; display: flex; flex-direction: column;gap: 5px; background-color: rgba(255, 68, 0, 0.063); padding: 10px;" action="">
 
-        <img src="wpp.png" alt="">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" placeholder="seu nome" required>
 
-    </footer>
+        <label for="cep">CEP:</label>
+        <input id="cep" type="number" placeholder="CEP" required>
+
+        <label for="cidade">Cidade:</label>
+        <input id="cidade" type="text" placeholder="cidade" required>
+
+        <label for="bairro">Bairro:</label>
+        <input id="bairro" type="text" placeholder="bairro" required>
+
+        <label for="rua">Rua:</label>
+        <input id="rua" type="text" placeholder="rua" required>
+
+        <label for="numero-residencia">Número residência:</label>
+        <input id="numero" type="text" placeholder="número residência" required>
+        
+        <h2 style="text-align: center;">serviço procurado</h2>
+        <select name="seletorServicos" id="seletorServicos">
+            <option value="Alvenaria">Alvenaria</option>
+            <option value="Bombeiro Hidráulico">Bombeiro Hidráulico</option>
+            <option value="Caça vazamentos">Caça vazamentos</option>
+            <option value="Cavalete">Cavalete</option>
+            <option value="Construção e limpeza de fossa séptica">Construção e limpeza de fossa séptica</option>
+            <option value="Controle de pragas urbanas">Controle de pragas urbanas</option>
+            <option value="Encanador">Encanador</option>
+            <option value="Hidráulica">Hidráulica</option>
+            <option value="Hidráulica reparos em esgoto em geral">Hidráulica reparos em esgoto em geral</option>
+            <option value="Hidrojateamento">Hidrojateamento</option>
+            <option value="Impermeabilização">Impermeabilização</option>
+            <option value="Infiltrações">Infiltrações</option>
+            <option value="Instalação de biodigestor">Instalação de biodigestor</option>
+            <option value="Instalação de caixa de inspeção de esgoto">Instalação de caixa de inspeção de esgoto</option>
+            <option value="Instalação de sistema de tratamento de esgoto">Instalação de sistema de tratamento de esgoto</option>
+            <option value="Instalação e limpeza de caixa d'água">Instalação e limpeza de caixa d'água</option>
+            <option value="Instalação e separação de relógio Sabesp">Instalação e separação de relógio Sabesp</option>
+            <option value="Pedreiro">Pedreiro</option>
+            <option value="Sistema de micro filmagem em encanamento de esgoto">Sistema de micro filmagem em encanamento de esgoto</option>
+            <option value="Troca de tubulação antiga de manilha por PVC">Troca de tubulação antiga de manilha por PVC</option>
+        </select>
+        <textarea name="descricaoServico" id="descricaoServico" rows="8" placeholder="Descreva o que esta acontecendo aqui."></textarea>
+        <input onclick="enviarWhatsApp()" type="submit">
+
+    </form>
 </body>
+<script src="main.js"></script>
+
 </html>

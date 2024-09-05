@@ -1,5 +1,5 @@
 main{
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 20px;
     padding: 0px 5px;
  
@@ -25,21 +25,27 @@ main a{
     border-radius: 8px;
     color: white;
 }
+#servicos ul{
+    display: block;
 
-main ul{
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
- 
 }
 
-main li img{
-    width: 180px;
-    border: solid 2px orangered;
-    border-radius: 100px;
-   
-    
+#servicos li{
+    margin-top: 10px;
+    list-style: inside;
+    text-align: start;
+}
 
+button{
+    width: 50%;
+    padding: 16px;
+    margin: 5%;
+    border-radius: 8px;
+    border: none;
+    background-color: orangered;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    box-shadow: 0px 0px 4px 2px black;
 }
