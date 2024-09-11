@@ -25,6 +25,7 @@ footer img {
 
 footer a {
     text-decoration: none;
+    padding: 10px;
 }
 footer p {
     font-weight: bold;

@@ -1,10 +1,9 @@
 header {
-    background-color: #000000;
-    box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.224);
+    background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 10;
     padding-top: 10px;
 }
 
