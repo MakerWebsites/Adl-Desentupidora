@@ -35,7 +35,7 @@ main a {
     background-color: rgba(255, 68, 0, 0.475);
     border-radius: 5px;
     padding: 5px;
-    animation: lista 1s ease;
+    animation: lista 10s ease;
     animation-timeline: view();
     animation-range: cover 0% cover 40%;
 
@@ -64,7 +64,7 @@ main a {
 #imagens-group img {
     box-shadow: 0px 0px 10px 1px black;
     margin-bottom: 30px;
-    animation: image 1ms ease-in-out;
+    animation: image 10ms ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 40%;
 }
