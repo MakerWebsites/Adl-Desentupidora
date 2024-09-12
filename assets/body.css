@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
 body{
-    font-family: "Montserrat", sans-serif;
+    
+    font-family: "Roboto Slab", serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgb(0, 100, 0), rgb(0, 150, 0), rgb(0, 200, 0), rgb(0, 250, 0));
+    background: linear-gradient(rgb(100, 0, 0), rgb(150, 0, 0));
     color: white;
     
 }
+
+
