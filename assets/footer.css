@@ -26,6 +26,8 @@ footer {
     animation-iteration-count: infinite;
 } */
 
+
+
 @keyframes wpp {
     50%{
         transform: scale(1.1) rotate(8deg) translateX(-10px);

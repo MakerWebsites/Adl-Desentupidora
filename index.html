@@ -16,23 +16,22 @@
 
     <title>Grupo S.O.L Desentupidora. Desentupidora [São Paulo]: Soluções Rápidas e Eficientes 24/7</title>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16638180112">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16638180112');
-</script>
 
 </head>
 
 <body>
     <header>
         <img src="assets/imagens/soldesentupidoralogo03.png" alt="">
+        
     </header>
+   
+    <div id="meuModal" class="modal">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <p>Aguarde....</p>
+        <div id="contador"></div>
+        <p>desenvolvido por SiteBooster &copy;</p>
+        
+      </div>
 
     <main>
 
@@ -41,7 +40,8 @@
             nós entendemos a urgência que cada situação de entupimento requer.
             Por isso, oferecemos um serviço ágil, eficiente e com a qualidade que você merece.
         </h4>
-        <button onclick="carregarPagina()">Fazer Orçamento</button>
+        <button onclick="carregarPagina()">Não Perca Tempo</button>
+        
      
        
         <section class="avaliacoes">
@@ -115,7 +115,7 @@
             detecção de vazamentos e reparos em geral na sua residência ou em empresa. Estamos disponíveis para atender! Oferecendo soluções personalizadas para cada situação.
         </h3>
 
-        <button onclick="carregarPagina()" >Fazer Orçamento</button>
+        <button onclick="carregarPagina()" >Não Perca Tempo</button>
 
         <section id="servicos">
             <h1>Serviços</h1>
@@ -141,7 +141,7 @@
                 <li>Sistema de micro filmagem em encanamento de esgoto</li>
                 <li>Troca de tubulação antiga de manilha por PVC</li>
             </ul>
-            <button onclick="carregarPagina()">Fazer Orçamento</button>
+            <button onclick="carregarPagina()">Não Perca Tempo</button>
         </section>
         
 
@@ -150,6 +150,12 @@
         <span>Conheça todos nossos <strong>Serviços</strong>.</span>
 
     </main>
+
+    <div class="ligacao-mensagem">
+       <a href="tel:+5511998729249"><span>Fazer ligação</span></a> 
+        <img onclick="direcionamentoDePagina()" id="img-wpp" src="assets/imagens/wpp.png" alt="">
+       </div>
+       
     <footer>
         <span>Zona Sul de São Paulo Capital</span>
 
@@ -159,7 +165,6 @@
         
               <a href="https://www.sitebooster.com.br"> <img src="assets/imagens/siteboosterlogotipo02.png" alt=""></a>
                <h6><a href="https://www.sitebooster.com.br">Desenvolvido por SiteBooter <sup>&copy;</sup></a></h6>
-
 
     </footer>
 </body>
